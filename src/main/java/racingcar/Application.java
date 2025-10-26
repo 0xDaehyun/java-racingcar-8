@@ -1,10 +1,10 @@
 package racingcar;
 
+
 public class Application {
     public static void main(String[] args) {
-        System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)") ;
 
-
-
+        var names = InputView.readCarNames();  // 자동차의 이름을 입력받는다. (함수로 분리)
+        int tryCount = InputView.readTryCount(); // 게임할 횟수를 입력 받는다.
     }
 }
